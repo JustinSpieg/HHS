@@ -1,54 +1,89 @@
-body { 
+/* Algemene stijlen */
+body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Lichte achtergrondkleur */
 }
 
+/* Header stijlen */
 header {
-    background: #009900;
-    color: #fff;
+    background-color: #ffcc00; /* Gele achtergrondkleur voor de header */
+    color: #333; /* Donkere tekstkleur */
     padding: 10px 0;
+}
+
+header h1 {
     text-align: center;
+    margin: 0;
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Geen opsommingstekens */
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Horizontale weergave */
+    margin: 0 15px; /* Ruimte tussen de links */
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
+    text-decoration: none; /* Geen onderstreping */
+    color: #333; /* Donkere tekstkleur */
+    font-weight: bold;
 }
 
+/* Hoofdsectie stijlen */
 main {
+    max-width: 1000px; /* Max breedte van de main sectie */
+    margin: 20px auto; /* Centraal uitlijnen met marge */
     padding: 20px;
+    background-color: #fff; /* Witte achtergrond voor content */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schaduw effect */
+}
+
+/* Sectie stijlen */
+section {
+    margin-bottom: 20px; /* Ruimte tussen secties */
 }
 
 h2 {
-    color: #009900;
+    color: #ffcc00; /* Gele kleur voor sectietitels */
+    border-bottom: 2px solid #ffcc00; /* Onderstreping effect */
+    padding-bottom: 5px; /* Ruimte onder de titel */
 }
 
 .product, .pakket {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Grijze rand */
+    border-radius: 5px; /* Ronde hoeken */
+    padding: 15px; /* Binnenmarge */
+    margin-bottom: 10px; /* Ruimte tussen producten/pakketten */
+    background-color: #f9f9f9; /* Lichte achtergrond voor producten/pakketten */
 }
 
+.product h3, .pakket h3 {
+    color: #ff6600; /* Oranje kleur voor product- en pakketnamen */
+}
+
+/* Footer stijlen */
 footer {
-    text-align: center;
+    text-align: center; /* Centraal uitlijnen */
     padding: 10px 0;
-    background: #333;
-    color: #fff;
+    background-color: #ffcc00; /* Gele achtergrondkleur voor de footer */
+    color: #333; /* Donkere tekstkleur */
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+a {
+    color: #ff6600; /* Oranje kleur voor links */
+}
+
+a:hover {
+    text-decoration: underline; /* Onderstreping bij hover */
 }
